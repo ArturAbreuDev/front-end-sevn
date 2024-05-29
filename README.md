@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Portal de Notícias SEVN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao Portal de Notícias SEVN, um projeto frontend desenvolvido para o Teste Full Stack 01 da SEVN. Este projeto simula um portal de notícias chamado SEVN NEWS, destacando um layout responsivo construído com tecnologias web modernas.
 
-Currently, two official plugins are available:
+## Visão Geral do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O Portal de Notícias SEVN foi projetado para simular um site de notícias do mundo real com duas páginas principais:
+- **Página Inicial**: Exibe os artigos de notícias mais importantes.
+- **Página de Artigo de Notícias**: Mostra os detalhes completos de um artigo de notícias selecionado na página inicial.
 
-## Expanding the ESLint configuration
+O projeto é construído usando React, aproveitando o React Router para navegação e o React Query para gerenciamento eficiente de estado e busca de dados.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- React Router DOM
+- React Query
+- CSS (com foco em Flexbox e Grid para layouts responsivos)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Funcionalidades
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Design Responsivo**: Garante que o layout se adapte a diferentes tamanhos de tela, proporcionando uma experiência ótima em desktops e dispositivos móveis.
+- **Busca de Dados Dinâmica**: Os dados dos artigos são buscados dinamicamente a partir de endpoints mock estruturados de maneira RESTful.
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+- `src/components`: Contém componentes de UI reutilizáveis.
+- `src/routes`: Contém os componentes de roteamento da aplicação.
+- `src/context`: Gerencia o estado da aplicação usando React Context.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo `LICENSE.md` para detalhes.
+
+## Agradecimentos
+
+Este projeto foi desenvolvido como parte do Teste Full Stack 01 da SEVN. Ele é projetado para demonstrar capacidades de desenvolvimento frontend usando React e tecnologias associadas.
