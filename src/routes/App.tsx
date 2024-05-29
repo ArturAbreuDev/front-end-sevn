@@ -1,4 +1,5 @@
 import Header from '../components/Header/Header'
+import Publicity from '../components/Publicity/Publicity'
 import './App.css'
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
   return (
     <>
       <Header />
-      <h1>Hello World</h1>
+      <main className="container-home">
+      <Publicity />
+      </main>
     </>
   )
 }
