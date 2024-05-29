@@ -21,7 +21,7 @@ export const ArticlesProvider = ({ children }: ArticlesProviderProps) => {
   const { data: mainArticlesResponse, error: mainError, isLoading: mainLoading } = useQuery<ArticlesResponse>({
     queryKey: ["mainArticles"],
     queryFn: async () => {
-      const response = await fetch(`http://localhost:3000/articles/main`);
+      const response = await fetch(`https://back-end-sevn.onrender.com/articles/main`);
       if (!response.ok) throw new Error("Network response was not ok");
       return response.json();
     },
@@ -30,7 +30,7 @@ export const ArticlesProvider = ({ children }: ArticlesProviderProps) => {
   const { data: secondaryArticlesResponse, error: secondaryError, isLoading: secondaryLoading } = useQuery<ArticlesResponse>({
     queryKey: ["secondaryArticles"],
     queryFn: async () => {
-      const response = await fetch(`http://localhost:3000/articles/secondary`);
+      const response = await fetch(`https://back-end-sevn.onrender.com/articles/secondary`);
       if (!response.ok) throw new Error("Network response was not ok");
       return response.json();
     },
