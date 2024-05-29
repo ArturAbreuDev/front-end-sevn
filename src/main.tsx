@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import App from "./routes/App";
 import { ArticlesProvider } from "./context/QueryContext";
+import App from "./routes/Home/App";
 
 const queryClient = new QueryClient();
 
