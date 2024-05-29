@@ -23,7 +23,7 @@ const Articles = () => {
     secondaryArticles?.find((article) => article.id === articleId);
 
   if (!article) {
-    return <div>Artigo não encontrado</div>;
+    return <div className="undefined">Artigo não encontrado</div>;
   }
 
   return (

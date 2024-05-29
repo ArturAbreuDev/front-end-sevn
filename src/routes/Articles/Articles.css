@@ -45,6 +45,14 @@
   color: #00000033;
 }
 
+.undefined{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 @media (max-width: 600px) {
   .container-articles {
     padding: 24px;
