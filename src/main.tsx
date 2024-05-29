@@ -4,6 +4,7 @@ import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import App from "./routes/App";
+import { ArticlesProvider } from "./context/QueryContext";
 
 const queryClient = new QueryClient();
 
@@ -11,11 +12,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Suspense fallback={<div>Loading...</div>}>
       <QueryClientProvider client={queryClient}>
-        <Router>
-          <Routes>
-            <Route path="/" element={<App />} />
-          </Routes>
-        </Router>
+        <ArticlesProvider>
+          <Router>
+            <Routes>
+              <Route path="/" element={<App />} />
+            </Routes>
+          </Router>
+        </ArticlesProvider>
       </QueryClientProvider>
     </Suspense>
   </React.StrictMode>
